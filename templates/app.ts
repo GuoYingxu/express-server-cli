@@ -36,7 +36,6 @@ app.all('*', function(req, res, next) {
   if(req.method=="OPTIONS") res.send(202);/*让options请求快速返回*/
   else  next();
 });
-app.get('/',routes.index)
 app.use('/api',/** authenticateHandler({}), */ apiRouter())
 
 /** 404 */
