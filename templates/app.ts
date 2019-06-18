@@ -12,7 +12,7 @@ import {apiRouter} from './routes/api/index'
 const  app = express();
 app.set('env',process.env.NODE_ENV||'development')
 app.set('port',process.env.PORT || 3001)
-app.set('views',join(__dirname,'views'))
+app.set('views',join(__dirname,'view'))
 app.set('view engine','jade')
 app.locals.title ='express'
 app.locals.pretty =true
