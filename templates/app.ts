@@ -1,5 +1,4 @@
 import * as express from 'express';
-import * as routes from './routes';
 import {join} from 'path';
 import * as favicon from 'serve-favicon'
 import * as logger from 'morgan'
